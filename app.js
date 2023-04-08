@@ -16,7 +16,7 @@ app.listen(port, (req, res) => {
   console.log("Server Is Running On Port: " + port);
 });
 
-database =
+const database =
   "mongodb+srv://marvellous:marvellous@marvellous.ihqyjz4.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose
@@ -25,5 +25,5 @@ mongoose
     console.log("Database Connected Successfully");
   })
   .catch((err) => {
-    console.log("Unable to Connect to the Database");
+    console.log("Unable to Connect to the Database" + err);
   });
